@@ -1,0 +1,4102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://pygae.github.io/lean-ga-docs/style.css">
+    <link rel="stylesheet" href="https://pygae.github.io/lean-ga-docs/pygments.css">
+    <link rel="shortcut icon" href="https://pygae.github.io/lean-ga-docs/favicon.ico">
+    <title>references - mathlib docs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Works referenced in mathlib doc strings are listed on this page." />
+
+    <meta name="og:title" content="references - mathlib docs">
+    <meta name="og:site_name" content="mathlib for Lean - API documentation">
+    <meta name="og:description" content="Works referenced in mathlib doc strings are listed on this page.">
+    <meta name="og:image" content="https://pygae.github.io/lean-ga-docs/meta-og.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="references - mathlib docs">
+    <meta name="twitter:description" content="Works referenced in mathlib doc strings are listed on this page.">
+    <meta name="twitter:image" content="https://pygae.github.io/lean-ga-docs/meta-twitter.png">
+</head>
+
+<body>
+
+<input id="nav_toggle" type="checkbox">
+
+<header>
+    <h1><label for="nav_toggle"></label><a href="https://leanprover-community.github.io">mathlib</a>
+        <span>documentation</span></h1>
+    <p class="header_filename break_within">references</p>
+    <form action="https://google.com/search" method="get" id="search_form">
+        <input type="hidden" name="sitesearch" value="https://leanprover-community.github.io/mathlib_docs">
+        <input type="text" name="q" autocomplete="off">
+        <button>Google site search</button>
+    </form>
+</header>
+
+<nav class="internal_nav">
+<h3><a href="#top">References</a></h3>
+
+    <div class="nav_link"><a href="#ACH19">ACH19</a></div>
+
+    <div class="nav_link"><a href="#AL19">AL19</a></div>
+
+    <div class="nav_link"><a href="#AM69">AM69</a></div>
+
+    <div class="nav_link"><a href="#AdMK17">AdMK17</a></div>
+
+    <div class="nav_link"><a href="#Alu16">Alu16</a></div>
+
+    <div class="nav_link"><a href="#Axl15">Axl15</a></div>
+
+    <div class="nav_link"><a href="#BD96">BD96</a></div>
+
+    <div class="nav_link"><a href="#Bea04">Bea04</a></div>
+
+    <div class="nav_link"><a href="#Bel64">Bel64</a></div>
+
+    <div class="nav_link"><a href="#Ber12">Ber12</a></div>
+
+    <div class="nav_link"><a href="#Bil99">Bil99</a></div>
+
+    <div class="nav_link"><a href="#Bla92">Bla92</a></div>
+
+    <div class="nav_link"><a href="#Bor94a">Bor94a</a></div>
+
+    <div class="nav_link"><a href="#Bor94b">Bor94b</a></div>
+
+    <div class="nav_link"><a href="#Bou05">Bou05</a></div>
+
+    <div class="nav_link"><a href="#Bou66">Bou66</a></div>
+
+    <div class="nav_link"><a href="#Bou98">Bou98</a></div>
+
+    <div class="nav_link"><a href="#CF67">CF67</a></div>
+
+    <div class="nav_link"><a href="#CHSH69">CHSH69</a></div>
+
+    <div class="nav_link"><a href="#CL21">CL21</a></div>
+
+    <div class="nav_link"><a href="#CM72">CM72</a></div>
+
+    <div class="nav_link"><a href="#Cal00">Cal00</a></div>
+
+    <div class="nav_link"><a href="#Car18">Car18</a></div>
+
+    <div class="nav_link"><a href="#Car19">Car19</a></div>
+
+    <div class="nav_link"><a href="#Con01">Con01</a></div>
+
+    <div class="nav_link"><a href="#Cs80">Cs80</a></div>
+
+    <div class="nav_link"><a href="#Dav73">Dav73</a></div>
+
+    <div class="nav_link"><a href="#Dyc92">Dyc92</a></div>
+
+    <div class="nav_link"><a href="#EW17">EW17</a></div>
+
+    <div class="nav_link"><a href="#FLST20">FLST20</a></div>
+
+    <div class="nav_link"><a href="#FR92">FR92</a></div>
+
+    <div class="nav_link"><a href="#Fed96">Fed96</a></div>
+
+    <div class="nav_link"><a href="#GMM">GMM</a></div>
+
+    <div class="nav_link"><a href="#GQ11">GQ11</a></div>
+
+    <div class="nav_link"><a href="#Ghy87">Ghy87</a></div>
+
+    <div class="nav_link"><a href="#Gou97">Gou97</a></div>
+
+    <div class="nav_link"><a href="#Gra11">Gra11</a></div>
+
+    <div class="nav_link"><a href="#Gun92">Gun92</a></div>
+
+    <div class="nav_link"><a href="#HW91">HW91</a></div>
+
+    <div class="nav_link"><a href="#HWHBS08">HWHBS08</a></div>
+
+    <div class="nav_link"><a href="#Hal35">Hal35</a></div>
+
+    <div class="nav_link"><a href="#Hal50a">Hal50a</a></div>
+
+    <div class="nav_link"><a href="#Hal50b">Hal50b</a></div>
+
+    <div class="nav_link"><a href="#Har77">Har77</a></div>
+
+    <div class="nav_link"><a href="#Haz09">Haz09</a></div>
+
+    <div class="nav_link"><a href="#Hib75">Hib75</a></div>
+
+    <div class="nav_link"><a href="#Hig52">Hig52</a></div>
+
+    <div class="nav_link"><a href="#Hof79">Hof79</a></div>
+
+    <div class="nav_link"><a href="#Hun02">Hun02</a></div>
+
+    <div class="nav_link"><a href="#HvD19">HvD19</a></div>
+
+    <div class="nav_link"><a href="#HvD20">HvD20</a></div>
+
+    <div class="nav_link"><a href="#Jam99">Jam99</a></div>
+
+    <div class="nav_link"><a href="#Joh02">Joh02</a></div>
+
+    <div class="nav_link"><a href="#Joy77">Joy77</a></div>
+
+    <div class="nav_link"><a href="#Joy82">Joy82</a></div>
+
+    <div class="nav_link"><a href="#LMT93">LMT93</a></div>
+
+    <div class="nav_link"><a href="#Lew19">Lew19</a></div>
+
+    <div class="nav_link"><a href="#Lur18">Lur18</a></div>
+
+    <div class="nav_link"><a href="#MM92">MM92</a></div>
+
+    <div class="nav_link"><a href="#MS77">MS77</a></div>
+
+    <div class="nav_link"><a href="#Mar76">Mar76</a></div>
+
+    <div class="nav_link"><a href="#McB96">McB96</a></div>
+
+    <div class="nav_link"><a href="#Mot49">Mot49</a></div>
+
+    <div class="nav_link"><a href="#NW63">NW63</a></div>
+
+    <div class="nav_link"><a href="#Nag78">Nag78</a></div>
+
+    <div class="nav_link"><a href="#Oro18">Oro18</a></div>
+
+    <div class="nav_link"><a href="#PES66">PES66</a></div>
+
+    <div class="nav_link"><a href="#Phi40">Phi40</a></div>
+
+    <div class="nav_link"><a href="#Pon20">Pon20</a></div>
+
+    <div class="nav_link"><a href="#Pos17">Pos17</a></div>
+
+    <div class="nav_link"><a href="#Rie17">Rie17</a></div>
+
+    <div class="nav_link"><a href="#Rud69">Rud69</a></div>
+
+    <div class="nav_link"><a href="#Rud87">Rud87</a></div>
+
+    <div class="nav_link"><a href="#Sam67">Sam67</a></div>
+
+    <div class="nav_link"><a href="#Sch11">Sch11</a></div>
+
+    <div class="nav_link"><a href="#Sch66">Sch66</a></div>
+
+    <div class="nav_link"><a href="#Sel67">Sel67</a></div>
+
+    <div class="nav_link"><a href="#Ser87">Ser87</a></div>
+
+    <div class="nav_link"><a href="#Sim11">Sim11</a></div>
+
+    <div class="nav_link"><a href="#Soa87">Soa87</a></div>
+
+    <div class="nav_link"><a href="#Sto35">Sto35</a></div>
+
+    <div class="nav_link"><a href="#Sto79">Sto79</a></div>
+
+    <div class="nav_link"><a href="#Tao10">Tao10</a></div>
+
+    <div class="nav_link"><a href="#Vai03">Vai03</a></div>
+
+    <div class="nav_link"><a href="#Wal18">Wal18</a></div>
+
+    <div class="nav_link"><a href="#Was04">Was04</a></div>
+
+    <div class="nav_link"><a href="#Wed19">Wed19</a></div>
+
+</nav>
+
+<main>
+    <a id="top"></a>
+    
+<div class="docfile">
+
+<h1>References</h1>
+
+<p>Works cited in mathlib are collected on this page. This is generated from the BibTeX file <a href="references.bib">docs/references.bib</a> (<a href="https://github.com/leanprover-community/mathlib/blob/master/docs/references.bib">view on GitHub</a>).</p>
+
+<ul>
+
+    <li id="ACH19"><a href="#ACH19">[ACH19]</a> Jeremy Avigad, Mario Carneiro, Simon Hudon, 
+      <a href="https://doi.org/10.4230/LIPIcs.ITP.2019.6">Data Types as Quotients of Polynomial Functors</a>.
+      
+      10th International Conference on Interactive Theorem Proving, ITP 2019, September 9-12, 2019, Portland, OR, USA,
+      2019.
+      <small></small>
+    </li>
+
+    <li id="AL19"><a href="#AL19">[AL19]</a> Benedikt Ahrens, Peter Lumsdaine, 
+      <a href="https://doi.org/10.23638/LMCS-15(1:20)2019">Displayed Categories</a>.
+      
+      Logical Methods in Computer Science,
+      2019.
+      <small></small>
+    </li>
+
+    <li id="AM69"><a href="#AM69">[AM69]</a> M. Atiyah, I. Macdonald, 
+      Introduction to commutative algebra.
+      
+      
+      1969.
+      <small></small>
+    </li>
+
+    <li id="AdMK17"><a href="#AdMK17">[AdMK17]</a> Jeremy Avigad, Leonardo Moura, Soonho Kong, 
+      Theorem Proving in Lean.
+      
+      
+      2017.
+      <small></small>
+    </li>
+
+    <li id="Alu16"><a href="#Alu16">[Alu16]</a> Paolo Aluffi, 
+      Algebra: Chapter 0.
+      
+      
+      2016.
+      <small></small>
+    </li>
+
+    <li id="Axl15"><a href="#Axl15">[Axl15]</a> Sheldon Axler, 
+      Linear algebra done right. 3rd ed..
+      
+      Undergraduate Texts Math.,
+      2015.
+      <small></small>
+    </li>
+
+    <li id="BD96"><a href="#BD96">[BD96]</a> Ilya Beylin, Peter Dybjer, 
+      Extracting a proof of coherence for monoidal categories from a proof of normalization for monoids.
+      
+      Types for Proofs and Programs,
+      1996.
+      <small></small>
+    </li>
+
+    <li id="Bea04"><a href="#Bea04">[Bea04]</a> Richard Beals, 
+      Analysis. An introduction.
+      
+      
+      2004.
+      <small></small>
+    </li>
+
+    <li id="Bel64"><a href="#Bel64">[Bel64]</a> J. Bell, 
+      <a href="https://doi.org/10.1103/PhysicsPhysiqueFizika.1.195">On the Einstein Podolsky Rosen paradox</a>.
+      
+      Phys. Phys. Fiz.,
+      1964.
+      <small></small>
+    </li>
+
+    <li id="Ber12"><a href="#Ber12">[Ber12]</a> S. Bernstein, 
+      Démonstration du théorème de Weierstrass fondée sur le calcul des probabilités.
+      
+      Comm. Kharkov Math. Soc.,
+      1912.
+      <small></small>
+    </li>
+
+    <li id="Bil99"><a href="#Bil99">[Bil99]</a> Patrick Billingsley, 
+      <a href="https://doi.org/10.1002/9780470316962">Convergence of probability measures</a>.
+      
+      
+      1999.
+      <small></small>
+    </li>
+
+    <li id="Bla92"><a href="#Bla92">[Bla92]</a> Andreas Blass, 
+      <a href="https://doi.org/10.1016/0168-0072(92)90073-9">A game semantics for linear logic</a>.
+      
+      Ann. Pure Appl. Logic,
+      1992.
+      <small></small>
+    </li>
+
+    <li id="Bor94a"><a href="#Bor94a">[Bor94a]</a> Francis Borceux, 
+      Handbook of Categorical Algebra: Volume 1, Basic Category Theory.
+      
+      
+      1994.
+      <small></small>
+    </li>
+
+    <li id="Bor94b"><a href="#Bor94b">[Bor94b]</a> Francis Borceux, 
+      Handbook of Categorical Algebra: Volume 2, Categories and Structures.
+      
+      
+      1994.
+      <small></small>
+    </li>
+
+    <li id="Bou05"><a href="#Bou05">[Bou05]</a> Nicolas Bourbaki, 
+      Lie groups and Lie algebras. Chapters 7–9.
+      
+      
+      2005.
+      <small></small>
+    </li>
+
+    <li id="Bou66"><a href="#Bou66">[Bou66]</a> Nicolas Bourbaki, 
+      Elements of mathematics. General topology. Part 1.
+      
+      
+      1966.
+      <small>
+        <a href="topology/uniform_space/basic.html#backref1" title="mathlib: topology.uniform_space.basic">[1]</a>
+      
+        <a href="order/filter/basic.html#backref1" title="mathlib: order.filter.basic">[2]</a>
+      
+        <a href="topology/basic.html#backref1" title="mathlib: topology.basic">[3]</a>
+      </small>
+    </li>
+
+    <li id="Bou98"><a href="#Bou98">[Bou98]</a> Nicolas Bourbaki, 
+      Lie groups and Lie algebras. Chapters 1–3.
+      
+      
+      1998.
+      <small></small>
+    </li>
+
+    <li id="CF67"><a href="#CF67">[CF67]</a> John Cassels, Albrecht Frölich, 
+      Algebraic number theory: proceedings of an instructional conference.
+      
+      
+      1967.
+      <small></small>
+    </li>
+
+    <li id="CHSH69"><a href="#CHSH69">[CHSH69]</a> John Clauser, Michael Horne, Abner Shimony, Richard Holt, 
+      <a href="https://doi.org/10.1103/PhysRevLett.23.880">Proposed experiment to test local hidden-variable theories</a>.
+      
+      Phys. Rev. Lett.,
+      1969.
+      <small></small>
+    </li>
+
+    <li id="CL21"><a href="#CL21">[CL21]</a> Johan Commelin, Robert Lewis, 
+      <a href="https://doi.org/10.1145/3437992.3439919">Formalizing the Ring of Witt Vectors</a>.
+      
+      Proceedings of the 10th ACM SIGPLAN International Conference on Certified Programs and Proofs,
+      2021.
+      <small></small>
+    </li>
+
+    <li id="CM72"><a href="#CM72">[CM72]</a> Jean Cadiou, Zohar Manna, 
+      <a href="https://doi.org/10.1145/942580.807072">Recursive definitions of partial functions and their computations</a>.
+      
+      ACM SIGACT News,
+      1972.
+      <small>
+        <a href="order/omega_complete_partial_order.html#backref2" title="mathlib: order.omega_complete_partial_order">[1]</a>
+      </small>
+    </li>
+
+    <li id="Cal00"><a href="#Cal00">[Cal00]</a> Grigore Cǎlugǎreanu, 
+      <a href="https://doi.org/10.1007/978-94-015-9588-9">Lattice Concepts of Module Theory</a>.
+      
+      
+      2000.
+      <small>
+        <a href="order/compactly_generated.html#backref1" title="mathlib: order.compactly_generated">[1]</a>
+      </small>
+    </li>
+
+    <li id="Car18"><a href="#Car18">[Car18]</a> Mario Carneiro, 
+      <a href="https://arxiv.org/abs/1802.01795">A Lean formalization of Matiyasevič's theorem</a>.
+      
+      
+      2018.
+      <small></small>
+    </li>
+
+    <li id="Car19"><a href="#Car19">[Car19]</a> Mario Carneiro, 
+      <a href="https://doi.org/10.4230/LIPIcs.ITP.2019.12">Formalizing Computability Theory via Partial Recursive Functions</a>.
+      
+      10th International Conference on Interactive Theorem Proving, ITP 2019, September 9-12, 2019, Portland, OR, USA,
+      2019.
+      <small></small>
+    </li>
+
+    <li id="Con01"><a href="#Con01">[Con01]</a> J. Conway, 
+      On numbers and games.
+      
+      
+      2001.
+      <small></small>
+    </li>
+
+    <li id="Cs80"><a href="#Cs80">[Cs80]</a> B. Cirel son, 
+      <a href="https://doi.org/10.1007/BF00417500">Quantum generalizations of Bell's inequality</a>.
+      
+      Lett. Math. Phys.,
+      1980.
+      <small></small>
+    </li>
+
+    <li id="Dav73"><a href="#Dav73">[Dav73]</a> Martin Davis, 
+      <a href="https://doi.org/10.2307/2318447">Hilbert's tenth problem is unsolvable</a>.
+      
+      Amer. Math. Monthly,
+      1973.
+      <small></small>
+    </li>
+
+    <li id="Dyc92"><a href="#Dyc92">[Dyc92]</a> Roy Dyckhoff, 
+      <a href="https://doi.org/10.2307/2275431">Contraction-free sequent calculi for intuitionistic logic</a>.
+      
+      Journal of Symbolic Logic,
+      1992.
+      <small>
+        <a href="tactic/itauto.html#backref1" title="mathlib: tactic.itauto">[1]</a>
+      </small>
+    </li>
+
+    <li id="EW17"><a href="#EW17">[EW17]</a> Manfred Einsiedler, Thomas Ward, 
+      <a href="https://doi.org/10.1007/978-3-319-58540-6">Functional Analysis, Spectral Theory, and Applications</a>.
+      
+      
+      2017.
+      <small></small>
+    </li>
+
+    <li id="FLST20"><a href="#FLST20">[FLST20]</a> Basil Fürer, Andreas Lochbihler, Joshua Schneider, Dmitriy Traytel, 
+      <a href="https://doi.org/10.1007/978-3-030-51054-1_4">Quotients of Bounded Natural Functors</a>.
+      
+      Automated Reasoning - 10th International Joint Conference, IJCAR 2020, Paris, France, July 1-4, 2020, Proceedings, Part II,
+      2020.
+      <small></small>
+    </li>
+
+    <li id="FR92"><a href="#FR92">[FR92]</a> Roger Fenn, Colin Rourke, 
+      <a href="https://doi.org/10.1142/S0218216592000203">Racks and links in codimension two</a>.
+      
+      Journal of Knot Theory and its Ramifications,
+      1992.
+      <small></small>
+    </li>
+
+    <li id="Fed96"><a href="#Fed96">[Fed96]</a> Herbert Federer, 
+      <a href="https://doi.org/10.1007/978-3-642-62010-2">Geometric Measure Theory</a>.
+      
+      
+      1996.
+      <small></small>
+    </li>
+
+    <li id="GMM"><a href="#GMM">[GMM]</a> Alena Gusakov, Bhavik Mehta, Kyle Miller, 
+      <a href="https://arxiv.org/abs/2101.00127">Formalizing Hall's Marriage Theorem in Lean</a>.
+      
+      
+      .
+      <small></small>
+    </li>
+
+    <li id="GQ11"><a href="#GQ11">[GQ11]</a> J. Gallier, J. Quaintance, 
+      <a href="https://www.cis.upenn.edu/~cis610/diffgeom-n.pdf">Notes on Differential Geometry and Lie Groups</a>.
+      
+      
+      2011.
+      <small>
+        <a href="linear_algebra/alternating.html#backref1" title="mathlib: linear_algebra.alternating">[1]</a>
+      </small>
+    </li>
+
+    <li id="Ghy87"><a href="#Ghy87">[Ghy87]</a> Étienne Ghys, 
+      <a href="https://doi.org/10.1090/conm/058.3/893858">Groupes d'homéomorphismes du cercle et cohomologie bornée</a>.
+      
+      Contemporary Mathematics,
+      1987.
+      <small></small>
+    </li>
+
+    <li id="Gou97"><a href="#Gou97">[Gou97]</a> Fernando Gouvêa, 
+      <a href="https://doi.org/10.1007/978-3-642-59058-0">p-adic numbers</a>.
+      
+      
+      1997.
+      <small></small>
+    </li>
+
+    <li id="Gra11"><a href="#Gra11">[Gra11]</a> George Grätzer, 
+      <a href="https://doi.org/10.1007/978-3-0348-0018-1">Lattice Theory: Foundation</a>.
+      
+      
+      2011.
+      <small>
+        <a href="order/boolean_algebra.html#backref3" title="mathlib: order.boolean_algebra">[1]</a>
+      
+        <a href="order/boolean_algebra.html#backref4" title="mathlib: order.boolean_algebra">[2]</a>
+      </small>
+    </li>
+
+    <li id="Gun92"><a href="#Gun92">[Gun92]</a> Carl Gunter, 
+      Semantics of Programming Languages: Structures and Techniques.
+      
+      
+      1992.
+      <small>
+        <a href="order/omega_complete_partial_order.html#backref3" title="mathlib: order.omega_complete_partial_order">[1]</a>
+      
+        <a href="order/omega_complete_partial_order.html#backref4" title="mathlib: order.omega_complete_partial_order">[2]</a>
+      
+        <a href="order/omega_complete_partial_order.html#backref5" title="mathlib: order.omega_complete_partial_order">[3]</a>
+      </small>
+    </li>
+
+    <li id="HW91"><a href="#HW91">[HW91]</a> John Hubbard, Beverly West, 
+      <a href="https://doi.org/10.1007/978-1-4612-4192-8">Differential Equations: A Dynamical Systems Approach</a>.
+      
+      
+      1991.
+      <small></small>
+    </li>
+
+    <li id="HWHBS08"><a href="#HWHBS08">[HWHBS08]</a> GH Hardy, EM Wright, Roger Heath-Brown, Joseph Silverman, 
+      An Introduction to the Theory of Numbers.
+      
+      
+      2008.
+      <small></small>
+    </li>
+
+    <li id="Hal35"><a href="#Hal35">[Hal35]</a> P. Hall, 
+      <a href="https://doi.org/10.1112/jlms/s1-10.37.26">On Representatives of Subsets</a>.
+      
+      Journal of the London Mathematical Society,
+      1935.
+      <small></small>
+    </li>
+
+    <li id="Hal50a"><a href="#Hal50a">[Hal50a]</a> Paul Halmos, 
+      <a href="https://doi.org/10.1007/978-1-4684-9440-2">Measure theory</a>.
+      
+      
+      1950.
+      <small></small>
+    </li>
+
+    <li id="Hal50b"><a href="#Hal50b">[Hal50b]</a> Paul Halmos, 
+      Measure theory.
+      
+      
+      1950.
+      <small></small>
+    </li>
+
+    <li id="Har77"><a href="#Har77">[Har77]</a> Robin Hartshorne, 
+      Algebraic geometry.
+      
+      
+      1977.
+      <small></small>
+    </li>
+
+    <li id="Haz09"><a href="#Haz09">[Haz09]</a> Michiel Hazewinkel, 
+      <a href="http://dx.doi.org/10.1016/S1570-7954(08)00207-6">Witt vectors. Part 1</a>.
+      
+      Handbook of Algebra,
+      2009.
+      <small></small>
+    </li>
+
+    <li id="Hib75"><a href="#Hib75">[Hib75]</a> Jean-Jacques Hiblot, 
+      Des anneaux euclidiens dont le plus petit algorithme n'est pas à valeurs finies.
+      
+      C. R. Acad. Sci. Paris Sér. A-B,
+      1975.
+      <small>
+        <a href="algebra/euclidean_domain.html#backref2" title="mathlib: algebra.euclidean_domain">[1]</a>
+      </small>
+    </li>
+
+    <li id="Hig52"><a href="#Hig52">[Hig52]</a> Graham Higman, 
+      <a href="https://doi.org/https://doi.org/10.1112/plms/s3-2.1.326">Ordering by Divisibility in Abstract Algebras</a>.
+      
+      Proceedings of the London Mathematical Society,
+      1952.
+      <small></small>
+    </li>
+
+    <li id="Hof79"><a href="#Hof79">[Hof79]</a> Douglas Hofstadter, 
+      Gödel, Escher, Bach: an eternal golden braid.
+      
+      
+      1979.
+      <small></small>
+    </li>
+
+    <li id="Hun02"><a href="#Hun02">[Hun02]</a> Craig Huneke, 
+      <a href="https://doi.org/10.1080/00029890.2002.11919853">The Friendship Theorem</a>.
+      
+      The American Mathematical Monthly,
+      2002.
+      <small></small>
+    </li>
+
+    <li id="HvD19"><a href="#HvD19">[HvD19]</a> Jesse Han, Floris Doorn, 
+      <a href="http://drops.dagstuhl.de/opus/volltexte/2019/11074">A Formalization of Forcing and the Unprovability of the Continuum Hypothesis</a>.
+      
+      10th International Conference on Interactive Theorem Proving (ITP 2019),
+      2019.
+      <small></small>
+    </li>
+
+    <li id="HvD20"><a href="#HvD20">[HvD20]</a> Jesse Han, Floris Doorn, 
+      <a href="https://doi.org/10.1145/3372885.3373826">A formal proof of the independence of the continuum hypothesis</a>.
+      
+      Proceedings of the 9th ACM SIGPLAN International Conference on Certified Programs and Proofs,
+      2020.
+      <small></small>
+    </li>
+
+    <li id="Jam99"><a href="#Jam99">[Jam99]</a> Ioan James, 
+      <a href="https://doi.org/10.1007/978-1-4471-3994-2">Topologies and uniformities</a>.
+      
+      
+      1999.
+      <small>
+        <a href="topology/uniform_space/basic.html#backref2" title="mathlib: topology.uniform_space.basic">[1]</a>
+      
+        <a href="topology/basic.html#backref2" title="mathlib: topology.basic">[2]</a>
+      </small>
+    </li>
+
+    <li id="Joh02"><a href="#Joh02">[Joh02]</a> Peter Johnstone, 
+      Sketches of an Elephant – A Topos Theory Compendium.
+      
+      
+      2002.
+      <small></small>
+    </li>
+
+    <li id="Joy77"><a href="#Joy77">[Joy77]</a> André Joyal, 
+      Remarques sur la théorie des jeux à deux personnes.
+      
+      Gazette des Sciences Mathematiques du Québec,
+      1977.
+      <small></small>
+    </li>
+
+    <li id="Joy82"><a href="#Joy82">[Joy82]</a> David Joyce, 
+      <a href="https://doi.org/10.1016/0022-4049(82)90077-9">A classifying invariant of knots, the knot quandle</a>.
+      
+      Journal of Pure and Applied Algebra,
+      1982.
+      <small></small>
+    </li>
+
+    <li id="LMT93"><a href="#LMT93">[LMT93]</a> R. Lidl, G. Mullen, G. Turnwald, 
+      Dickson polynomials.
+      
+      
+      1993.
+      <small></small>
+    </li>
+
+    <li id="Lew19"><a href="#Lew19">[Lew19]</a> Robert Lewis, 
+      <a href="http://doi.acm.org/10.1145/3293880.3294089">A Formal Proof of Hensel's Lemma over the p-adic Integers</a>.
+      
+      Proceedings of the 8th ACM SIGPLAN International Conference on Certified Programs and Proofs,
+      2019.
+      <small></small>
+    </li>
+
+    <li id="Lur18"><a href="#Lur18">[Lur18]</a> Jacob Lurie, 
+      <a href="https://www.math.ias.edu/~lurie/papers/SAG-rootfile.pdf">Spectral Algebraic Geometry</a>.
+      
+      
+      last updated 2018.
+      <small></small>
+    </li>
+
+    <li id="MM92"><a href="#MM92">[MM92]</a> Saunders MacLane, Ieke Moerdijk, 
+      Sheaves in geometry and logic: A first introduction to topos theory.
+      
+      
+      1992.
+      <small></small>
+    </li>
+
+    <li id="MS77"><a href="#MS77">[MS77]</a> Daniel Marcus, Emanuele Sacco, 
+      Number fields.
+      
+      
+      1977.
+      <small></small>
+    </li>
+
+    <li id="Mar76"><a href="#Mar76">[Mar76]</a> George Markowsky, 
+      <a href="https://doi.org/10.1007/bf02485815">Chain-complete posets and directed sets with applications</a>.
+      
+      Algebra Universalis,
+      1976.
+      <small>
+        <a href="order/omega_complete_partial_order.html#backref1" title="mathlib: order.omega_complete_partial_order">[1]</a>
+      </small>
+    </li>
+
+    <li id="McB96"><a href="#McB96">[McB96]</a> Conor McBride, 
+      Inverting inductively defined relations in LEGO.
+      
+      International Workshop on Types for Proofs and Programs,
+      1996.
+      <small>
+        <a href="tactic/unify_equations.html#backref1" title="mathlib: tactic.unify_equations">[1]</a>
+      </small>
+    </li>
+
+    <li id="Mot49"><a href="#Mot49">[Mot49]</a> Th. Motzkin, 
+      <a href="https://doi.org/10.1090/S0002-9904-1949-09344-8">The Euclidean algorithm</a>.
+      
+      Bull. Amer. Math. Soc.,
+      1949.
+      <small>
+        <a href="algebra/euclidean_domain.html#backref1" title="mathlib: algebra.euclidean_domain">[1]</a>
+      </small>
+    </li>
+
+    <li id="NW63"><a href="#NW63">[NW63]</a> C. Nash-Williams, 
+      <a href="https://doi.org/10.1017/S0305004100003844">On well-quasi-ordering finite trees</a>.
+      
+      Mathematical Proceedings of the Cambridge Philosophical Society,
+      1963.
+      <small></small>
+    </li>
+
+    <li id="Nag78"><a href="#Nag78">[Nag78]</a> Masayoshi Nagata, 
+      On Euclid algorithm.
+      
+      C. P. Ramanujam—a tribute,
+      1978.
+      <small>
+        <a href="algebra/euclidean_domain.html#backref3" title="mathlib: algebra.euclidean_domain">[1]</a>
+      </small>
+    </li>
+
+    <li id="Oro18"><a href="#Oro18">[Oro18]</a> Greg Orosi, 
+      A simple derivation of Faulhaber's formula.
+      
+      Appl. Math. E-Notes,
+      2018.
+      <small></small>
+    </li>
+
+    <li id="PES66"><a href="#PES66">[PES66]</a>  P. Erdös, V. Sós, 
+      <a href="https://www.renyi.hu/~p_erdos/1966-06.pdf">On a problem of graph theory</a>.
+      
+      Studia Sci. Math.,
+      1966.
+      <small></small>
+    </li>
+
+    <li id="Phi40"><a href="#Phi40">[Phi40]</a> Ralph Phillips, 
+      <a href="https://doi.org/10.2307/1990004">Integration in a convex linear topological space</a>.
+      
+      Trans. Amer. Math. Soc.,
+      1940.
+      <small></small>
+    </li>
+
+    <li id="Pon20"><a href="#Pon20">[Pon20]</a> Lionel Ponton, 
+      <a href="https://arxiv.org/abs/2008.03575">Roots of Chebyshev polynomials: a purely algebraic approach</a>.
+      
+      
+      2020.
+      <small>
+        <a href="ring_theory/polynomial/chebyshev.html#backref1" title="mathlib: ring_theory.polynomial.chebyshev">[1]</a>
+      </small>
+    </li>
+
+    <li id="Pos17"><a href="#Pos17">[Pos17]</a> Jürgen Pöschel, 
+      <a href="https://arxiv.org/abs/1702.03691">On the Siegel-Sternberg linearization theorem</a>.
+      
+      
+      2017.
+      <small></small>
+    </li>
+
+    <li id="Rie17"><a href="#Rie17">[Rie17]</a> Emily Riehl, 
+      <a href="http://www.math.jhu.edu/~eriehl/context.pdf">Category theory in context</a>.
+      
+      
+      2017.
+      <small></small>
+    </li>
+
+    <li id="Rud69"><a href="#Rud69">[Rud69]</a> Mary Rudin, 
+      <a href="https://doi.org/10.1090/S0002-9939-1969-0236876-3">A new proof that metric spaces are paracompact</a>.
+      
+      Proc. Amer. Math. Soc.,
+      1969.
+      <small>
+        <a href="topology/metric_space/emetric_space.html#backref1" title="mathlib: topology.metric_space.emetric_space">[1]</a>
+      </small>
+    </li>
+
+    <li id="Rud87"><a href="#Rud87">[Rud87]</a> Walter Rudin, 
+      Real and Complex Analysis.
+      
+      
+      1987.
+      <small></small>
+    </li>
+
+    <li id="Sam67"><a href="#Sam67">[Sam67]</a> Pierre Samuel, 
+      Théorie algébrique des nombres.
+      
+      
+      1967.
+      <small></small>
+    </li>
+
+    <li id="Sch11"><a href="#Sch11">[Sch11]</a> Peter Scholze, 
+      <a href="https://arxiv.org/abs/1111.4914">Perfectoid spaces</a>.
+      
+      
+      2011.
+      <small></small>
+    </li>
+
+    <li id="Sch66"><a href="#Sch66">[Sch66]</a> H.H. Schaefer, 
+      Topological Vector Spaces.
+      
+      
+      1966.
+      <small></small>
+    </li>
+
+    <li id="Sel67"><a href="#Sel67">[Sel67]</a> G. Seligman, 
+      Modular Lie algebras.
+      
+      
+      1967.
+      <small></small>
+    </li>
+
+    <li id="Ser87"><a href="#Ser87">[Ser87]</a> Jean-Pierre Serre, 
+      <a href="https://doi.org/10.1007/978-1-4757-3910-7">Complex semisimple Lie algebras</a>.
+      
+      
+      1987.
+      <small></small>
+    </li>
+
+    <li id="Sim11"><a href="#Sim11">[Sim11]</a> Barry Simon, 
+      <a href="https://doi.org/10.1017/CBO9780511910135">Convexity: An Analytic Viewpoint</a>.
+      
+      
+      2011.
+      <small></small>
+    </li>
+
+    <li id="Soa87"><a href="#Soa87">[Soa87]</a> Robert Soare, 
+      <a href="https://doi.org/10.1007/978-3-662-02460-7">Recursively enumerable sets and degrees</a>.
+      
+      
+      1987.
+      <small></small>
+    </li>
+
+    <li id="Sto35"><a href="#Sto35">[Sto35]</a> M. Stone, 
+      <a href="https://doi.org/10.2307/2371008">Postulates for Boolean Algebras and Generalized Boolean Algebras</a>.
+      
+      American Journal of Mathematics,
+      1935.
+      <small>
+        <a href="order/boolean_algebra.html#backref1" title="mathlib: order.boolean_algebra">[1]</a>
+      
+        <a href="order/boolean_algebra.html#backref2" title="mathlib: order.boolean_algebra">[2]</a>
+      </small>
+    </li>
+
+    <li id="Sto79"><a href="#Sto79">[Sto79]</a> A. Stone, 
+      <a href="https://doi.org/10.1016/0016-660x(79)90008-4">Inverse limits of compact spaces</a>.
+      
+      General Topology Appl.,
+      1979.
+      <small></small>
+    </li>
+
+    <li id="Tao10"><a href="#Tao10">[Tao10]</a> Terence Tao, 
+      <a href="https://terrytao.files.wordpress.com/2010/02/epsilon.pdf">An Epsilon of Room, I: Real Analysis: Pages from Year Three of a Mathematical Blog</a>.
+      
+      
+      2010.
+      <small></small>
+    </li>
+
+    <li id="Vai03"><a href="#Vai03">[Vai03]</a> Jussi Väisälä, 
+      <a href="https://www.jstor.org/stable/3647749">A Proof of the Mazur-Ulam Theorem</a>.
+      
+      The American Mathematical Monthly,
+      2003.
+      <small></small>
+    </li>
+
+    <li id="Wal18"><a href="#Wal18">[Wal18]</a> H.S. Wall, 
+      Analytic Theory of Continued Fractions.
+      
+      
+      2018.
+      <small></small>
+    </li>
+
+    <li id="Was04"><a href="#Was04">[Was04]</a> Larry Wasserman, 
+      All Of Statistics: A Concise Course in Statistical Inference.
+      
+      
+      2004.
+      <small></small>
+    </li>
+
+    <li id="Wed19"><a href="#Wed19">[Wed19]</a> Torsten Wedhorn, 
+      <a href="https://arxiv.org/abs/1910.05934">Adic Spaces</a>.
+      
+      
+      2019.
+      <small>
+        <a href="ring_theory/valuation/basic.html#backref1" title="mathlib: ring_theory.valuation.basic">[1]</a>
+      
+        <a href="ring_theory/valuation/basic.html#backref2" title="mathlib: ring_theory.valuation.basic">[2]</a>
+      
+        <a href="ring_theory/valuation/basic.html#backref3" title="mathlib: ring_theory.valuation.basic">[3]</a>
+      
+        <a href="ring_theory/valuation/basic.html#backref4" title="mathlib: ring_theory.valuation.basic">[4]</a>
+      </small>
+    </li>
+
+</ul>
+</div>
+
+</main>
+
+<nav class="nav">
+    <h3>General documentation</h3>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/">index</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/tactics.html">tactics</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/commands.html">commands</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/hole_commands.html">hole commands</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/attributes.html">attributes</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/notes.html">notes</a></div>
+<div class="nav_link"><a href="https://pygae.github.io/lean-ga-docs/references.html">references</a></div>
+
+<h3>Additional documentation</h3>
+
+
+<h3>Library</h3>
+        <h4>core</h4>
+        
+        <details class="nav_sect" data-path="data" >
+            <summary>data</summary>
+            
+        <details class="nav_sect" data-path="data/buffer" >
+            <summary>buffer</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/buffer/parser.html">parser</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/buffer.html">buffer</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/dlist.html">dlist</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/vector.html">vector</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init" >
+            <summary>init</summary>
+            
+        <details class="nav_sect" data-path="init/algebra" >
+            <summary>algebra</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/algebra/classes.html">classes</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/algebra/functions.html">functions</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/algebra/order.html">order</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/control" >
+            <summary>control</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/alternative.html">alternative</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/applicative.html">applicative</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/combinators.html">combinators</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/except.html">except</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/functor.html">functor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/id.html">id</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/lawful.html">lawful</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/lift.html">lift</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/monad.html">monad</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/monad_fail.html">monad_fail</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/option.html">option</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/reader.html">reader</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/control/state.html">state</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data" >
+            <summary>data</summary>
+            
+        <details class="nav_sect" data-path="init/data/array" >
+            <summary>array</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/array/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/array/slice.html">slice</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/bool" >
+            <summary>bool</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/bool/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/bool/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/char" >
+            <summary>char</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/char/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/char/classes.html">classes</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/char/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/fin" >
+            <summary>fin</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/fin/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/fin/ops.html">ops</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/int" >
+            <summary>int</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/int/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/int/bitwise.html">bitwise</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/int/comp_lemmas.html">comp_lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/int/order.html">order</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/list" >
+            <summary>list</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/list/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/list/instances.html">instances</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/list/lemmas.html">lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/list/qsort.html">qsort</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/nat" >
+            <summary>nat</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/nat/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/nat/bitwise.html">bitwise</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/nat/div.html">div</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/nat/gcd.html">gcd</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/nat/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/option" >
+            <summary>option</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/option/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/option/instances.html">instances</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/ordering" >
+            <summary>ordering</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/ordering/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/ordering/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/rbmap" >
+            <summary>rbmap</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/rbmap/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/rbtree" >
+            <summary>rbtree</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/rbtree/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/rbtree/default.html">default</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/sigma" >
+            <summary>sigma</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/sigma/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/sigma/lex.html">lex</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/string" >
+            <summary>string</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/string/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/string/ops.html">ops</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/subtype" >
+            <summary>subtype</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/subtype/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/subtype/instances.html">instances</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/sum" >
+            <summary>sum</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/sum/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/data/unsigned" >
+            <summary>unsigned</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/unsigned/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/unsigned/ops.html">ops</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/punit.html">punit</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/quot.html">quot</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/repr.html">repr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/set.html">set</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/setoid.html">setoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/data/to_string.html">to_string</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/meta" >
+            <summary>meta</summary>
+            
+        <details class="nav_sect" data-path="init/meta/converter" >
+            <summary>converter</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/converter/conv.html">conv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/converter/interactive.html">interactive</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/meta/lean" >
+            <summary>lean</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/lean/parser.html">parser</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/meta/smt" >
+            <summary>smt</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/smt/congruence_closure.html">congruence_closure</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/smt/ematch.html">ematch</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/smt/interactive.html">interactive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/smt/rsimp.html">rsimp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/smt/smt_tactic.html">smt_tactic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="init/meta/widget" >
+            <summary>widget</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/widget/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/widget/html_cmd.html">html_cmd</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/widget/interactive_expr.html">interactive_expr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/widget/replace_save_info.html">replace_save_info</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/widget/tactic_component.html">tactic_component</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/ac_tactics.html">ac_tactics</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/async_tactic.html">async_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/attribute.html">attribute</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/backward.html">backward</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/case_tag.html">case_tag</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/comp_value_tactics.html">comp_value_tactics</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/congr_lemma.html">congr_lemma</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/congr_tactic.html">congr_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/constructor_tactic.html">constructor_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/contradiction_tactic.html">contradiction_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/declaration.html">declaration</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/derive.html">derive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/environment.html">environment</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/exceptional.html">exceptional</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/expr.html">expr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/expr_address.html">expr_address</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/float.html">float</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/format.html">format</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/fun_info.html">fun_info</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/has_reflect.html">has_reflect</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/hole_command.html">hole_command</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/injection_tactic.html">injection_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/interaction_monad.html">interaction_monad</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/interactive.html">interactive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/interactive_base.html">interactive_base</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/json.html">json</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/level.html">level</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/local_context.html">local_context</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/match_tactic.html">match_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/mk_dec_eq_instance.html">mk_dec_eq_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/mk_has_reflect_instance.html">mk_has_reflect_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/mk_has_sizeof_instance.html">mk_has_sizeof_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/mk_inhabited_instance.html">mk_inhabited_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/module_info.html">module_info</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/name.html">name</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/occurrences.html">occurrences</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/options.html">options</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/pexpr.html">pexpr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/rb_map.html">rb_map</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/rec_util.html">rec_util</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/ref.html">ref</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/relation_tactics.html">relation_tactics</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/rewrite_tactic.html">rewrite_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/set_get_option_tactics.html">set_get_option_tactics</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/simp_tactic.html">simp_tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/tactic.html">tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/tagged_format.html">tagged_format</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/task.html">task</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/type_context.html">type_context</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/vm.html">vm</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/meta/well_founded_tactics.html">well_founded_tactics</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/cc_lemmas.html">cc_lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/classical.html">classical</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/coe.html">coe</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/core.html">core</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/function.html">function</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/funext.html">funext</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/ite_simp.html">ite_simp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/logic.html">logic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/propext.html">propext</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/util.html">util</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/version.html">version</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/init/wf.html">wf</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="system" >
+            <summary>system</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/system/io.html">io</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/system/io_interface.html">io_interface</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/system/random.html">random</a>
+        </div>
+        </details>
+        <h4>lean-ga</h4>
+        
+        <details class="nav_sect" data-path="for_mathlib" >
+            <summary>for_mathlib</summary>
+            
+        <details class="nav_sect" data-path="for_mathlib/algebra" >
+            <summary>algebra</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/for_mathlib/algebra/algebra_operations.html">algebra_operations</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/for_mathlib/algebra/center_submonoid.html">center_submonoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/for_mathlib/algebra/filtration.html">filtration</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/for_mathlib/algebra/monoid_algebra.html">monoid_algebra</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="for_mathlib/data" >
+            <summary>data</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/for_mathlib/data/quaternion.html">quaternion</a>
+        </div>
+        </details>
+        </details>
+        <details class="nav_sect" data-path="geometric_algebra" >
+            <summary>geometric_algebra</summary>
+            
+        <details class="nav_sect" data-path="geometric_algebra/from_mathlib" >
+            <summary>from_mathlib</summary>
+            
+        <details class="nav_sect" data-path="geometric_algebra/from_mathlib/concrete" >
+            <summary>concrete</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/concrete/cga.html">cga</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/concrete/complex.html">complex</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/concrete/pga.html">pga</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/concrete/quaternion.html">quaternion</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/conjugation.html">conjugation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/versors.html">versors</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/from_mathlib/zmod_grading.html">zmod_grading</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="geometric_algebra/nursery" >
+            <summary>nursery</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/nursery/chisolm.html">chisolm</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/nursery/graded.html">graded</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/nursery/instances.html">instances</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="geometric_algebra/translations" >
+            <summary>translations</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/translations/hol_light.html">hol_light</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/translations/ida.html">ida</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/translations/ida_derived.html">ida_derived</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/geometric_algebra/translations/laurents.html">laurents</a>
+        </div>
+        </details>
+        </details>
+        <h4>mathlib</h4>
+        
+        <details class="nav_sect" data-path="algebra" >
+            <summary>algebra</summary>
+            
+        <details class="nav_sect" data-path="algebra/algebra" >
+            <summary>algebra</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/algebra/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/algebra/operations.html">operations</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/algebra/ordered.html">ordered</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/algebra/subalgebra.html">subalgebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/algebra/tower.html">tower</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/big_operators" >
+            <summary>big_operators</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/enat.html">enat</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/finprod.html">finprod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/finsupp.html">finsupp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/intervals.html">intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/nat_antidiagonal.html">nat_antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/order.html">order</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/big_operators/ring.html">ring</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/char_p" >
+            <summary>char_p</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/char_p/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/char_p/invertible.html">invertible</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/gcd_monoid" >
+            <summary>gcd_monoid</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/gcd_monoid/finset.html">finset</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/gcd_monoid/multiset.html">multiset</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/group" >
+            <summary>group</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/commute.html">commute</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/conj.html">conj</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/defs.html">defs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/hom.html">hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/hom_instances.html">hom_instances</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/inj_surj.html">inj_surj</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/semiconj.html">semiconj</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/to_additive.html">to_additive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/type_tags.html">type_tags</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/units.html">units</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/units_hom.html">units_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group/with_one.html">with_one</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/group_power" >
+            <summary>group_power</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_power/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_power/lemmas.html">lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_power/order.html">order</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/group_with_zero" >
+            <summary>group_with_zero</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_with_zero/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_with_zero/defs.html">defs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_with_zero/power.html">power</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/module" >
+            <summary>module</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/hom.html">hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/linear_map.html">linear_map</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/opposites.html">opposites</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/ordered.html">ordered</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/submodule.html">submodule</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/module/submodule_lattice.html">submodule_lattice</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/ring" >
+            <summary>ring</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ring/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ring/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ring/prod.html">prod</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebra/star" >
+            <summary>star</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/star/basic.html">basic</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/add_torsor.html">add_torsor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/archimedean.html">archimedean</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/associated.html">associated</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/char_zero.html">char_zero</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/covariant_and_contravariant.html">covariant_and_contravariant</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/direct_sum.html">direct_sum</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/divisibility.html">divisibility</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/euclidean_domain.html">euclidean_domain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/field_power.html">field_power</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/floor.html">floor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/free_algebra.html">free_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/free_monoid.html">free_monoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/gcd_monoid.html">gcd_monoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/geom_sum.html">geom_sum</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_action_hom.html">group_action_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/group_ring_action.html">group_ring_action</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/indicator_function.html">indicator_function</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/invertible.html">invertible</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/iterate_hom.html">iterate_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/linear_ordered_comm_group_with_zero.html">linear_ordered_comm_group_with_zero</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/monoid_algebra.html">monoid_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/non_unital_alg_hom.html">non_unital_alg_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/opposites.html">opposites</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/order.html">order</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/order_functions.html">order_functions</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_field.html">ordered_field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_group.html">ordered_group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_monoid.html">ordered_monoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_monoid_lemmas.html">ordered_monoid_lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_pi.html">ordered_pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ordered_ring.html">ordered_ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/periodic.html">periodic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/pointwise.html">pointwise</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/punit_instances.html">punit_instances</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/quadratic_discriminant.html">quadratic_discriminant</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/quaternion.html">quaternion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/ring_quot.html">ring_quot</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/smul_with_zero.html">smul_with_zero</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/support.html">support</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebra/triv_sq_zero_ext.html">triv_sq_zero_ext</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="algebraic_geometry" >
+            <summary>algebraic_geometry</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/algebraic_geometry/prime_spectrum.html">prime_spectrum</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis" >
+            <summary>analysis</summary>
+            
+        <details class="nav_sect" data-path="analysis/analytic" >
+            <summary>analytic</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/analytic/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/asymptotics" >
+            <summary>asymptotics</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/asymptotics/asymptotic_equivalent.html">asymptotic_equivalent</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/asymptotics/asymptotics.html">asymptotics</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/calculus" >
+            <summary>calculus</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/deriv.html">deriv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/extend_deriv.html">extend_deriv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/fderiv.html">fderiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/formal_multilinear_series.html">formal_multilinear_series</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/inverse.html">inverse</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/local_extr.html">local_extr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/mean_value.html">mean_value</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/tangent_cone.html">tangent_cone</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/calculus/times_cont_diff.html">times_cont_diff</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/complex" >
+            <summary>complex</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/complex/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/complex/real_deriv.html">real_deriv</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/convex" >
+            <summary>convex</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/convex/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/convex/topology.html">topology</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/normed_space" >
+            <summary>normed_space</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/add_torsor.html">add_torsor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/banach.html">banach</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/bounded_linear_maps.html">bounded_linear_maps</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/finite_dimension.html">finite_dimension</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/inner_product.html">inner_product</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/linear_isometry.html">linear_isometry</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/multilinear.html">multilinear</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/normed_group_hom.html">normed_group_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/operator_norm.html">operator_norm</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/ordered.html">ordered</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/riesz_lemma.html">riesz_lemma</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/normed_space/units.html">units</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="analysis/special_functions" >
+            <summary>special_functions</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/special_functions/exp_log.html">exp_log</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/special_functions/pow.html">pow</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/special_functions/sqrt.html">sqrt</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/special_functions/trigonometric.html">trigonometric</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/analysis/specific_limits.html">specific_limits</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="category_theory" >
+            <summary>category_theory</summary>
+            
+        <details class="nav_sect" data-path="category_theory/category" >
+            <summary>category</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/category/default.html">default</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/endomorphism.html">endomorphism</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/full_subcategory.html">full_subcategory</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/fully_faithful.html">fully_faithful</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/functor.html">functor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/functor_category.html">functor_category</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/groupoid.html">groupoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/isomorphism.html">isomorphism</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/natural_isomorphism.html">natural_isomorphism</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/natural_transformation.html">natural_transformation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/category_theory/types.html">types</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="combinatorics" >
+            <summary>combinatorics</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/combinatorics/composition.html">composition</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/combinatorics/partition.html">partition</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/combinatorics/quiver.html">quiver</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="control" >
+            <summary>control</summary>
+            
+        <details class="nav_sect" data-path="control/equiv_functor" >
+            <summary>equiv_functor</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/equiv_functor/instances.html">instances</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="control/monad" >
+            <summary>monad</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/monad/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="control/traversable" >
+            <summary>traversable</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/traversable/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/traversable/derive.html">derive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/traversable/equiv.html">equiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/traversable/instances.html">instances</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/traversable/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/applicative.html">applicative</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/bifunctor.html">bifunctor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/equiv_functor.html">equiv_functor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/control/functor.html">functor</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data" >
+            <summary>data</summary>
+            
+        <details class="nav_sect" data-path="data/array" >
+            <summary>array</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/array/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/complex" >
+            <summary>complex</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/complex/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/complex/exponential.html">exponential</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/complex/is_R_or_C.html">is_R_or_C</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/complex/module.html">module</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/dlist" >
+            <summary>dlist</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/dlist/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/equiv" >
+            <summary>equiv</summary>
+            
+        <details class="nav_sect" data-path="data/equiv/encodable" >
+            <summary>encodable</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/encodable/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/encodable/lattice.html">lattice</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/denumerable.html">denumerable</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/fin.html">fin</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/fintype.html">fintype</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/functor.html">functor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/list.html">list</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/local_equiv.html">local_equiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/mul_add.html">mul_add</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/mul_add_aut.html">mul_add_aut</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/nat.html">nat</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/option.html">option</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/ring.html">ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/ring_aut.html">ring_aut</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/equiv/transfer_instance.html">transfer_instance</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/finset" >
+            <summary>finset</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/fold.html">fold</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/intervals.html">intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/lattice.html">lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/nat_antidiagonal.html">nat_antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/noncomm_prod.html">noncomm_prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/order.html">order</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/powerset.html">powerset</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/preimage.html">preimage</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finset/sort.html">sort</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/finsupp" >
+            <summary>finsupp</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finsupp/antidiagonal.html">antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finsupp/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finsupp/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/finsupp/to_dfinsupp.html">to_dfinsupp</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/fintype" >
+            <summary>fintype</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/fintype/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/fintype/card.html">card</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/fintype/intervals.html">intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/fintype/sort.html">sort</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/int" >
+            <summary>int</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/cast.html">cast</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/char_zero.html">char_zero</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/gcd.html">gcd</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/modeq.html">modeq</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/parity.html">parity</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/int/range.html">range</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/list" >
+            <summary>list</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/bag_inter.html">bag_inter</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/chain.html">chain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/defs.html">defs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/duplicate.html">duplicate</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/erase_dup.html">erase_dup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/forall2.html">forall2</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/func.html">func</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/intervals.html">intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/min_max.html">min_max</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/nat_antidiagonal.html">nat_antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/nodup.html">nodup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/nodup_equiv_fin.html">nodup_equiv_fin</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/of_fn.html">of_fn</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/pairwise.html">pairwise</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/perm.html">perm</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/range.html">range</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/rotate.html">rotate</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/sort.html">sort</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/sublists.html">sublists</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/tfae.html">tfae</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/list/zip.html">zip</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/matrix" >
+            <summary>matrix</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/matrix/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/matrix/dmatrix.html">dmatrix</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/matrix/notation.html">notation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/matrix/pequiv.html">pequiv</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/multiset" >
+            <summary>multiset</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/antidiagonal.html">antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/erase_dup.html">erase_dup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/finset_ops.html">finset_ops</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/fold.html">fold</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/intervals.html">intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/lattice.html">lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/nat_antidiagonal.html">nat_antidiagonal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/nodup.html">nodup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/powerset.html">powerset</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/range.html">range</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/multiset/sort.html">sort</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/mv_polynomial" >
+            <summary>mv_polynomial</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/comm_ring.html">comm_ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/equiv.html">equiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/monad.html">monad</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/rename.html">rename</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mv_polynomial/variables.html">variables</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/nat" >
+            <summary>nat</summary>
+            
+        <details class="nav_sect" data-path="data/nat/choose" >
+            <summary>choose</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/choose/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/choose/dvd.html">dvd</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/choose/sum.html">sum</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/cast.html">cast</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/enat.html">enat</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/factorial.html">factorial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/gcd.html">gcd</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/modeq.html">modeq</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/pairing.html">pairing</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/parity.html">parity</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/pow.html">pow</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/prime.html">prime</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/sqrt.html">sqrt</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/totient.html">totient</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/nat/with_bot.html">with_bot</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/num" >
+            <summary>num</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/num/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/option" >
+            <summary>option</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/option/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/option/defs.html">defs</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/pnat" >
+            <summary>pnat</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/pnat/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/pnat/intervals.html">intervals</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/polynomial" >
+            <summary>polynomial</summary>
+            
+        <details class="nav_sect" data-path="data/polynomial/degree" >
+            <summary>degree</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/degree/definitions.html">definitions</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/degree/lemmas.html">lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/degree/trailing_degree.html">trailing_degree</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/algebra_map.html">algebra_map</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/cancel_leads.html">cancel_leads</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/coeff.html">coeff</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/derivative.html">derivative</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/div.html">div</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/erase_lead.html">erase_lead</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/eval.html">eval</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/field_division.html">field_division</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/identities.html">identities</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/induction.html">induction</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/integral_normalization.html">integral_normalization</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/monic.html">monic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/monomial.html">monomial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/reverse.html">reverse</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/polynomial/ring_division.html">ring_division</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/rat" >
+            <summary>rat</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/cast.html">cast</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/floor.html">floor</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/meta_defs.html">meta_defs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rat/order.html">order</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/real" >
+            <summary>real</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/cau_seq.html">cau_seq</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/cau_seq_completion.html">cau_seq_completion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/ennreal.html">ennreal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/nnreal.html">nnreal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/sign.html">sign</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/real/sqrt.html">sqrt</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/set" >
+            <summary>set</summary>
+            
+        <details class="nav_sect" data-path="data/set/intervals" >
+            <summary>intervals</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/disjoint.html">disjoint</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/image_preimage.html">image_preimage</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/infinite.html">infinite</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/ord_connected.html">ord_connected</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/proj_Icc.html">proj_Icc</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/intervals/unordered_interval.html">unordered_interval</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/accumulate.html">accumulate</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/countable.html">countable</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/disjointed.html">disjointed</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/finite.html">finite</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/function.html">function</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set/lattice.html">lattice</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/setoid" >
+            <summary>setoid</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/setoid/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/sigma" >
+            <summary>sigma</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/sigma/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/string" >
+            <summary>string</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/string/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/string/defs.html">defs</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="data/zmod" >
+            <summary>zmod</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/zmod/basic.html">basic</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/bool.html">bool</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/char.html">char</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/dfinsupp.html">dfinsupp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/fin.html">fin</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/mllist.html">mllist</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/opposite.html">opposite</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/pequiv.html">pequiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/pfun.html">pfun</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/quot.html">quot</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/rel.html">rel</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/set_like.html">set_like</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/subtype.html">subtype</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/sum.html">sum</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/tree.html">tree</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/data/vector2.html">vector2</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="deprecated" >
+            <summary>deprecated</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/deprecated/group.html">group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/deprecated/ring.html">ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/deprecated/subgroup.html">subgroup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/deprecated/submonoid.html">submonoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/deprecated/subring.html">subring</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="dynamics" >
+            <summary>dynamics</summary>
+            
+        <details class="nav_sect" data-path="dynamics/fixed_points" >
+            <summary>fixed_points</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/dynamics/fixed_points/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/dynamics/fixed_points/topology.html">topology</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/dynamics/periodic_pts.html">periodic_pts</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="field_theory" >
+            <summary>field_theory</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/field_theory/finiteness.html">finiteness</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/field_theory/tower.html">tower</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="group_theory" >
+            <summary>group_theory</summary>
+            
+        <details class="nav_sect" data-path="group_theory/group_action" >
+            <summary>group_action</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/defs.html">defs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/group.html">group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/sub_mul_action.html">sub_mul_action</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/group_action/units.html">units</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="group_theory/perm" >
+            <summary>perm</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/cycle_type.html">cycle_type</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/cycles.html">cycles</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/fin.html">fin</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/option.html">option</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/sign.html">sign</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/subgroup.html">subgroup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/perm/support.html">support</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="group_theory/specific_groups" >
+            <summary>specific_groups</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/specific_groups/cyclic.html">cyclic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="group_theory/submonoid" >
+            <summary>submonoid</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/submonoid/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/submonoid/membership.html">membership</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/submonoid/operations.html">operations</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/archimedean.html">archimedean</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/congruence.html">congruence</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/coset.html">coset</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/finiteness.html">finiteness</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/order_of_element.html">order_of_element</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/quotient_group.html">quotient_group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/subgroup.html">subgroup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/group_theory/sylow.html">sylow</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="linear_algebra" >
+            <summary>linear_algebra</summary>
+            
+        <details class="nav_sect" data-path="linear_algebra/affine_space" >
+            <summary>affine_space</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/affine_space/affine_equiv.html">affine_equiv</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/affine_space/affine_map.html">affine_map</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/affine_space/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/affine_space/midpoint.html">midpoint</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="linear_algebra/clifford_algebra" >
+            <summary>clifford_algebra</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/clifford_algebra/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/clifford_algebra/conjugation.html">conjugation</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="linear_algebra/matrix" >
+            <summary>matrix</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/matrix/determinant.html">determinant</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/matrix/finite_dimensional.html">finite_dimensional</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/matrix/nonsingular_inverse.html">nonsingular_inverse</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/matrix/to_lin.html">to_lin</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/alternating.html">alternating</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/basis.html">basis</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/bilinear_form.html">bilinear_form</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/dfinsupp.html">dfinsupp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/dimension.html">dimension</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/direct_sum_module.html">direct_sum_module</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/dual.html">dual</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/exterior_algebra.html">exterior_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/finite_dimensional.html">finite_dimensional</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/finsupp.html">finsupp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/linear_independent.html">linear_independent</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/linear_pmap.html">linear_pmap</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/multilinear.html">multilinear</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/prod.html">prod</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/projection.html">projection</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/quadratic_form.html">quadratic_form</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/sesquilinear_form.html">sesquilinear_form</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/special_linear_group.html">special_linear_group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/std_basis.html">std_basis</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/tensor_algebra.html">tensor_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/linear_algebra/tensor_product.html">tensor_product</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="logic" >
+            <summary>logic</summary>
+            
+        <details class="nav_sect" data-path="logic/function" >
+            <summary>function</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/function/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/function/conjugate.html">conjugate</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/function/iterate.html">iterate</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/embedding.html">embedding</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/is_empty.html">is_empty</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/nontrivial.html">nontrivial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/relation.html">relation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/relator.html">relator</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/logic/unique.html">unique</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="meta" >
+            <summary>meta</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/meta/expr.html">expr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/meta/expr_lens.html">expr_lens</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/meta/rb_map.html">rb_map</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="order" >
+            <summary>order</summary>
+            
+        <details class="nav_sect" data-path="order/filter" >
+            <summary>filter</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/archimedean.html">archimedean</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/at_top_bot.html">at_top_bot</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/bases.html">bases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/cofinite.html">cofinite</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/countable_Inter.html">countable_Inter</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/extr.html">extr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/interval.html">interval</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/lift.html">lift</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/partial.html">partial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/pointwise.html">pointwise</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/filter/ultrafilter.html">ultrafilter</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/atoms.html">atoms</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/boolean_algebra.html">boolean_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/bounded_lattice.html">bounded_lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/bounds.html">bounds</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/closure.html">closure</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/compactly_generated.html">compactly_generated</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/complete_boolean_algebra.html">complete_boolean_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/complete_lattice.html">complete_lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/conditionally_complete_lattice.html">conditionally_complete_lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/copy.html">copy</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/directed.html">directed</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/fixed_points.html">fixed_points</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/galois_connection.html">galois_connection</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/iterate.html">iterate</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/lattice.html">lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/lattice_intervals.html">lattice_intervals</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/liminf_limsup.html">liminf_limsup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/modular_lattice.html">modular_lattice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/omega_complete_partial_order.html">omega_complete_partial_order</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/order_dual.html">order_dual</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/order_iso_nat.html">order_iso_nat</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/partial_sups.html">partial_sups</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/preorder_hom.html">preorder_hom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/rel_classes.html">rel_classes</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/rel_iso.html">rel_iso</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/symm_diff.html">symm_diff</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/well_founded.html">well_founded</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/order/zorn.html">zorn</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="ring_theory" >
+            <summary>ring_theory</summary>
+            
+        <details class="nav_sect" data-path="ring_theory/adjoin" >
+            <summary>adjoin</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/adjoin/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="ring_theory/ideal" >
+            <summary>ideal</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/ideal/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/ideal/operations.html">operations</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/ideal/prod.html">prod</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="ring_theory/polynomial" >
+            <summary>polynomial</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/polynomial/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/polynomial/chebyshev.html">chebyshev</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/polynomial/content.html">content</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/polynomial/tower.html">tower</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="ring_theory/power_series" >
+            <summary>power_series</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/power_series/basic.html">basic</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="ring_theory/valuation" >
+            <summary>valuation</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/valuation/basic.html">basic</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/algebra_tower.html">algebra_tower</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/coprime.html">coprime</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/euclidean_domain.html">euclidean_domain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/finiteness.html">finiteness</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/integral_domain.html">integral_domain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/matrix_algebra.html">matrix_algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/multiplicity.html">multiplicity</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/noetherian.html">noetherian</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/non_zero_divisors.html">non_zero_divisors</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/principal_ideal_domain.html">principal_ideal_domain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/ring_invo.html">ring_invo</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/subring.html">subring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/subsemiring.html">subsemiring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/tensor_product.html">tensor_product</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/ring_theory/unique_factorization_domain.html">unique_factorization_domain</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="set_theory" >
+            <summary>set_theory</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/set_theory/cardinal.html">cardinal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/set_theory/cardinal_ordinal.html">cardinal_ordinal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/set_theory/ordinal.html">ordinal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/set_theory/ordinal_arithmetic.html">ordinal_arithmetic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/set_theory/schroeder_bernstein.html">schroeder_bernstein</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic" >
+            <summary>tactic</summary>
+            
+        <details class="nav_sect" data-path="tactic/converter" >
+            <summary>converter</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/converter/apply_congr.html">apply_congr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/converter/interactive.html">interactive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/converter/old_conv.html">old_conv</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/linarith" >
+            <summary>linarith</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/datatypes.html">datatypes</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/elimination.html">elimination</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/frontend.html">frontend</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/lemmas.html">lemmas</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/parsing.html">parsing</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/preprocessing.html">preprocessing</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/linarith/verification.html">verification</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/lint" >
+            <summary>lint</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/default.html">default</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/frontend.html">frontend</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/misc.html">misc</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/simp.html">simp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lint/type_classes.html">type_classes</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/monotonicity" >
+            <summary>monotonicity</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/monotonicity/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/monotonicity/interactive.html">interactive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/monotonicity/lemmas.html">lemmas</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/nth_rewrite" >
+            <summary>nth_rewrite</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/nth_rewrite/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/nth_rewrite/congr.html">congr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/nth_rewrite/default.html">default</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/omega" >
+            <summary>omega</summary>
+            
+        <details class="nav_sect" data-path="tactic/omega/int" >
+            <summary>int</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/int/dnf.html">dnf</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/int/form.html">form</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/int/main.html">main</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/int/preterm.html">preterm</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="tactic/omega/nat" >
+            <summary>nat</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/dnf.html">dnf</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/form.html">form</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/main.html">main</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/neg_elim.html">neg_elim</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/preterm.html">preterm</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/nat/sub_elim.html">sub_elim</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/clause.html">clause</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/coeffs.html">coeffs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/eq_elim.html">eq_elim</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/find_ees.html">find_ees</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/find_scalars.html">find_scalars</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/lin_comb.html">lin_comb</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/main.html">main</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/misc.html">misc</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/prove_unsats.html">prove_unsats</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/omega/term.html">term</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/abel.html">abel</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/algebra.html">algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/alias.html">alias</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/apply.html">apply</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/apply_fun.html">apply_fun</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/auto_cases.html">auto_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/binder_matching.html">binder_matching</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/cache.html">cache</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/cancel_denoms.html">cancel_denoms</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/chain.html">chain</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/choose.html">choose</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/clear.html">clear</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/congr.html">congr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/core.html">core</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/dec_trivial.html">dec_trivial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/delta_instance.html">delta_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/dependencies.html">dependencies</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/derive_fintype.html">derive_fintype</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/derive_inhabited.html">derive_inhabited</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/doc_commands.html">doc_commands</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/elide.html">elide</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/equiv_rw.html">equiv_rw</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/explode.html">explode</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/ext.html">ext</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/field_simp.html">field_simp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/fin_cases.html">fin_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/find.html">find</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/finish.html">finish</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/fix_reflect_string.html">fix_reflect_string</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/generalize_proofs.html">generalize_proofs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/generalizes.html">generalizes</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/group.html">group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/hint.html">hint</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/interactive.html">interactive</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/interactive_expr.html">interactive_expr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/interval_cases.html">interval_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/itauto.html">itauto</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lean_core_docs.html">lean_core_docs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/lift.html">lift</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/localized.html">localized</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/mk_iff_of_inductive_prop.html">mk_iff_of_inductive_prop</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/noncomm_ring.html">noncomm_ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/norm_cast.html">norm_cast</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/norm_fin.html">norm_fin</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/norm_num.html">norm_num</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/norm_swap.html">norm_swap</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/obviously.html">obviously</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/pi_instances.html">pi_instances</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/pretty_cases.html">pretty_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/protected.html">protected</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/push_neg.html">push_neg</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/rcases.html">rcases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/reassoc_axiom.html">reassoc_axiom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/rename_var.html">rename_var</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/replacer.html">replacer</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/reserved_notation.html">reserved_notation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/restate_axiom.html">restate_axiom</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/rewrite.html">rewrite</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/ring.html">ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/ring_exp.html">ring_exp</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/scc.html">scc</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/show_term.html">show_term</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/simp_command.html">simp_command</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/simp_result.html">simp_result</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/simp_rw.html">simp_rw</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/simpa.html">simpa</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/simps.html">simps</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/slice.html">slice</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/solve_by_elim.html">solve_by_elim</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/split_ifs.html">split_ifs</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/squeeze.html">squeeze</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/subtype_instance.html">subtype_instance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/suggest.html">suggest</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/tauto.html">tauto</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/tfae.html">tfae</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/tidy.html">tidy</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/transform_decl.html">transform_decl</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/transport.html">transport</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/trunc_cases.html">trunc_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/unfold_cases.html">unfold_cases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/unify_equations.html">unify_equations</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/where.html">where</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/with_local_reducibility.html">with_local_reducibility</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/wlog.html">wlog</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/tactic/zify.html">zify</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="topology" >
+            <summary>topology</summary>
+            
+        <details class="nav_sect" data-path="topology/algebra" >
+            <summary>algebra</summary>
+            
+        <details class="nav_sect" data-path="topology/algebra/ordered" >
+            <summary>ordered</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/ordered/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/ordered/extend_from.html">extend_from</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/ordered/liminf_limsup.html">liminf_limsup</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/ordered/proj_Icc.html">proj_Icc</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/algebra.html">algebra</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/field.html">field</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/group.html">group</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/group_completion.html">group_completion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/group_with_zero.html">group_with_zero</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/infinite_sum.html">infinite_sum</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/module.html">module</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/monoid.html">monoid</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/mul_action.html">mul_action</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/multilinear.html">multilinear</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/polynomial.html">polynomial</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/ring.html">ring</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/algebra/uniform_group.html">uniform_group</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="topology/instances" >
+            <summary>instances</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/instances/ennreal.html">ennreal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/instances/nnreal.html">nnreal</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/instances/real.html">real</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/instances/real_vector_space.html">real_vector_space</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="topology/metric_space" >
+            <summary>metric_space</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/antilipschitz.html">antilipschitz</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/baire.html">baire</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/cau_seq_filter.html">cau_seq_filter</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/completion.html">completion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/contracting.html">contracting</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/emetric_space.html">emetric_space</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/hausdorff_distance.html">hausdorff_distance</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/isometry.html">isometry</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/metric_space/lipschitz.html">lipschitz</a>
+        </div>
+        </details>
+        <details class="nav_sect" data-path="topology/uniform_space" >
+            <summary>uniform_space</summary>
+            
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/abstract_completion.html">abstract_completion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/cauchy.html">cauchy</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/complete_separated.html">complete_separated</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/completion.html">completion</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/pi.html">pi</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/separation.html">separation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/uniform_convergence.html">uniform_convergence</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/uniform_space/uniform_embedding.html">uniform_embedding</a>
+        </div>
+        </details>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/G_delta.html">G_delta</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/bases.html">bases</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/basic.html">basic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/connected.html">connected</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/constructions.html">constructions</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/continuous_on.html">continuous_on</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/dense_embedding.html">dense_embedding</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/extend_from.html">extend_from</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/homeomorph.html">homeomorph</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/local_extr.html">local_extr</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/local_homeomorph.html">local_homeomorph</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/maps.html">maps</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/opens.html">opens</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/order.html">order</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/paracompact.html">paracompact</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/path_connected.html">path_connected</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/separation.html">separation</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/sequences.html">sequences</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/shrinking_lemma.html">shrinking_lemma</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/subset_properties.html">subset_properties</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/tactic.html">tactic</a>
+        </div>
+        <div class="nav_link ">
+            <a href="https://pygae.github.io/lean-ga-docs/topology/unit_interval.html">unit_interval</a>
+        </div>
+        </details>
+</nav>
+
+
+<script>
+MathJax = {
+    tex: {
+    inlineMath: [['$', '$']],
+    displayMath: [['$$', '$$']]
+    },
+    options: {
+        skipHtmlTags: [
+            'script', 'noscript', 'style', 'textarea', 'pre',
+            'code', 'annotation', 'annotation-xml',
+            'decl', 'decl_meta', 'attributes', 'decl_args', 'decl_header', 'decl_name',
+            'decl_type', 'equation', 'equations', 'structure_field', 'structure_fields',
+            'constructor', 'constructors', 'instances'
+        ],
+        ignoreHtmlClass: 'tex2jax_ignore',
+        processHtmlClass: 'tex2jax_process',
+    },
+};
+
+siteRoot = "https://pygae.github.io/lean-ga-docs/";
+</script>
+<script src="https://pygae.github.io/lean-ga-docs/add_commit.js"></script>
+<script src="https://pygae.github.io/lean-ga-docs/nav.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
